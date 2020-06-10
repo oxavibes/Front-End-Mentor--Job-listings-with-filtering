@@ -1,0 +1,232 @@
+:root {
+  --primary-color: hsl(180, 29%, 50%);
+
+  --light-cyan-bg: hsl(180, 52%, 96%);
+  --light-cyan-tablet: hsl(180, 31%, 95%);
+
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --v-dark-grayish-cyan: rgb(44, 58, 58);
+
+  --ad-border: 5px solid #63BABA;
+  --box-shadow: 0px 5px 10px rgba(0, 0, 0, .09);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid orange; */
+}
+
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Spartan', monospace, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  height: 100vh;
+  background-color: var(--light-cyan-bg);
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  /* border: 1px solid orange; */
+}
+
+.header {
+  position: relative;
+  height: 15.6rem;
+  background-color: var(--primary-color);
+  margin-bottom: 8rem;
+  background-image: url(../images/bg-header-desktop.svg);
+}
+
+.chips-container {
+  max-width: 96rem;
+  margin: 0 auto;
+  position: absolute;
+  padding: 1.5rem 2rem;
+  left: 3rem;
+  right: 3rem;
+  bottom: -33px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+}
+
+.chips-container .categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+
+.chips-container__button {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.job-list {}
+
+.ad {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.ad--featured {
+  border-left: var(--ad-border);
+}
+
+.ad__company-logo {
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 2rem;
+}
+
+.ad__details {
+  margin-right: auto;
+  margin-bottom: -1rem;
+}
+
+.ad__details>* {
+  margin-bottom: 1rem;
+}
+
+.ad__tags {
+  margin-right: -.5rem;
+}
+
+.ad__tag {
+  color: #FFF;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: .5rem;
+  font-weight: 700;
+}
+
+.ad__tag--company {
+  color: var(--primary-color);
+}
+
+.ad__tag--new,
+.ad__tag--featured {
+  /* vertical-align: bottom; */
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 4px 10px 4px 10px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+
+.ad__tag--featured {
+  /* text-transform: uppercase; */
+  /* border-radius: 3px; */
+  background-color: var(--v-dark-grayish-cyan);
+  /* vertical-align: middle; */
+}
+
+.ad__role {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--v-dark-grayish-cyan);
+}
+
+.ad__info {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-grayish-cyan);
+  display: flex;
+  margin-right: -2.5rem;
+}
+
+.ad__info-item:first-child {
+  list-style: none;
+}
+
+.ad__info-item {
+  margin-right: 2.5rem;
+}
+
+.categories {
+  margin-right: -1rem;
+}
+
+.chip {
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: var(--light-cyan-tablet);
+  color: var(--primary-color);
+}
+
+
+.chip__body {
+  padding: 5px 10px;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: currentColor;
+  cursor: pointer;
+}
+
+.chip__body--active:hover,
+.chip__body--active:active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+
+.chip__append {
+  width: 25px;
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--v-dark-grayish-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.chip__icon {
+  width: 10px;
+  height: 10px;
+}

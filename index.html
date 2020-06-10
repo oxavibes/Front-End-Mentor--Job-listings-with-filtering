@@ -1,193 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+
   <title>Frontend Mentor | Job Listings</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+  <div class="header">
+    <div class="chips-container">
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+      <div class="categories">
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+        <span class="chip">
+          <span href="#" class="chip__body">
+            Frontend
+          </span>
+          <button class="chip__append">
+            <img src="images/icon-remove.svg" class="chip__icon"></img>
+          </button>
+        </span>
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
+        <span class="chip">
+          <span class="chip__body">
+            Senior
+          </span>
+          <button class="chip__append">
+            <img src="images/icon-remove.svg" class="chip__icon"></img>
+          </button>
+        </span>
 
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+        <span class="chip">
+          <span class="chip__body">
+            HTML
+          </span>
+          <button class="chip__append">
+            <img src="images/icon-remove.svg" class="chip__icon"></img>
+          </button>
+        </span>
 
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
+        <span class="chip">
+          <span class="chip__body">
+            CSS
+          </span>
+          <button class="chip__append">
+            <img src="images/icon-remove.svg" class="chip__icon"></img>
+          </button>
+        </span>
 
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+        <span class="chip">
+          <span class="chip__body">
+            JavaScript
+          </span>
+          <button class="chip__append">
+            <img src="images/icon-remove.svg" class="chip__icon"></img>
+          </button>
+        </span>
+      </div>
 
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
+      <a href="#" class="chips-container__button">Clear</a>
+    </div>
+  </div>
 
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
+  <section class="job-list container">
 
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
+    <article class="ad ad--featured">
+      <img src="/images/photosnap.svg" alt="Company logo" class="ad__company-logo">
+
+      <div class="ad__details">
+        <div class="ad__tags">
+          <span class="ad__tag ad__tag--company">Photosnap</span>
+          <span class="ad__tag ad__tag--new">new!</span>
+          <span class="ad__tag ad__tag--featured">featured</span>
+        </div>
+
+        <a href="#" class="ad__role">
+          Senior Frontend Developer
+        </a>
+
+        <ul class="ad__info">
+          <li class="ad__info-item">1d ago</li>
+          <li class="ad__info-item">Full Time</li>
+          <li class="ad__info-item"> USA only</li>
+      </div>
+      </ul>
+
+      <div class="categories">
+        <span class="chip">
+          <a href="#" class="chip__body chip__body--active">
+            Frontend
+          </a>
+        </span>
+        <span class="chip">
+          <a class="chip__body chip__body--active">
+            Senior
+          </a>
+        </span>
+        <span class="chip">
+          <a href="#" class="chip__body chip__body--active">
+            HTML
+          </a>
+        </span>
+        <span class="chip">
+          <a href="#" class="chip__body chip__body--active">
+            CSS
+          </a>
+        </span>
+        <span class="chip">
+          <a href="#" class="chip__body chip__body--active">
+            JavaScript
+          </a>
+        </span>
+      </div>
+
+    </article>
+  </section>
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+
 </html>
