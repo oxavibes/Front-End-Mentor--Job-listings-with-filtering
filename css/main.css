@@ -56,7 +56,8 @@ a {
 
 .header {
   position: relative;
-  height: 15.6rem;
+  height: 156px;
+  max-height: 156px;
   background-color: var(--primary-color);
   margin-bottom: 8rem;
   background-image: url(../images/bg-header-desktop.svg);
@@ -78,17 +79,21 @@ a {
 }
 
 .chips-container .categories {
+  min-height: 45px;
   display: flex;
   flex-wrap: wrap;
   margin-right: 2rem;
 }
 
-.chips-container__button {
-  color: var(--primary-color);
-  text-decoration: underline;
-  text-decoration-style: wavy;
+.btn {
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: var(--v-dark-grayish-cyan);
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 1.1rem;
   margin-left: auto;
-  align-self: flex-end;
 }
 
 .job-list {}
@@ -116,6 +121,7 @@ a {
 
 .ad__details {
   margin-right: auto;
+  padding-right: 2rem;
   margin-bottom: -1rem;
 }
 
@@ -189,6 +195,7 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 5px;
@@ -206,6 +213,7 @@ a {
   cursor: pointer;
 }
 
+.chip__body:hover,
 .chip__body--active:hover,
 .chip__body--active:active {
   color: #fff;
