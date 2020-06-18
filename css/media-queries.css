@@ -3,6 +3,10 @@
     font-size: 70%;
   }
 
+  .header {
+    background-image: url(../images/bg-header-mobile.svg);
+  }
+
   .ad {
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -30,7 +34,7 @@
 @media only screen and (max-width: 31.25em) {
   .ad {
     padding-top: 3rem;
-    /* justify-content: stretch; */
+    margin-bottom: 4rem;
   }
 
   .ad__company-logo {
